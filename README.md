@@ -1,171 +1,143 @@
 #  RobotIA
 
-Um assistente virtual inteligente desenvolvido em Python com integração ao Ollama, interface gráfica moderna, memória persistente e histórico de conversas.
+Uma assistente virtual em Python com interface gráfica, memória permanente e integração com IA local via Ollama.
 
 ---
 
-##  Sobre o Projeto
+##  Sobre o projeto
 
-RobotIA é um assistente virtual criado para executar conversas utilizando modelos de inteligência artificial locais através do Ollama.
+O **RobotIA** é uma IA pessoal desenvolvida em Python que combina:
 
-O projeto foi desenvolvido com foco em aprendizado de Python, inteligência artificial, interfaces gráficas e organização de código, utilizando uma arquitetura modular e preparada para futuras expansões.
-
----
-
-##  Funcionalidades
-
-*  Chat com IA local usando Ollama
-*  Interface gráfica moderna com CustomTkinter
-*  Memória permanente do usuário
-*  Histórico de conversas
-*  Exportação de chats para arquivos TXT
-*  Alternância entre tema claro e escuro
-*  Interface responsiva com Threads
-*  Estrutura modular para facilitar manutenção e expansão
+-  Chat inteligente com IA local (Ollama)
+-  Interface gráfica moderna (CustomTkinter)
+-  Memória permanente do usuário
+-  Histórico de conversas
+-  Sistema de voz (opcional)
+-  Exportação de conversas
+-  Tema escuro/claro
 
 ---
 
-##  Tecnologias Utilizadas
+##  Tecnologias utilizadas
 
-* Python 3
-* CustomTkinter
-* Requests
-* JSON
-* Ollama
-* Threading
-
----
-
-##  Estrutura do Projeto
-
-```text
-RobotIA/
-│
-├── main.py
-├── chatbot.py
-├── memoria.py
-├── historico.py
-├── interface.py
-│
-└── data/
-    ├── memoria.json
-    └── historico.json
-```
+- Python 3.10+
+- CustomTkinter
+- Requests
+- JSON (memória e histórico)
+- Threading
+- Ollama (modelo local de IA)
 
 ---
 
 ##  Instalação
 
-Clone o repositório:
+### 1. Clone o repositório
 
-```bash
-git clone https://github.com/Brunopro3845/RobotIA.git
-```
-
-Acesse a pasta:
-
-```bash
+git clone https://github.com/seu-usuario/RobotIA.git
 cd RobotIA
-```
-
-Instale as dependências:
-
-```bash
-pip install customtkinter requests
-```
 
 ---
 
-##  Configurando o Ollama
+### 2. Instale as dependências
 
-Instale o Ollama:
+pip install customtkinter requests
 
+---
+
+### 3. Instale e rode o Ollama
+
+Baixe em:
 https://ollama.com
 
-Baixe um modelo:
+Depois rode:
 
-```bash
-ollama pull qwen2.5:0.5b
-```
-
-Inicie o Ollama normalmente e mantenha-o em execução.
+ollama run qwen2.5:0.5b
 
 ---
 
-##  Executando o Projeto
+##  Como executar
 
-```bash
 python main.py
-```
-
-ou
-
-```bash
-py main.py
-```
 
 ---
 
-##  Memória Permanente
+##  Funcionalidades
 
-A RobotIA é capaz de armazenar informações importantes em arquivos JSON, permitindo que determinados dados sejam preservados entre diferentes sessões.
+###  Chat com IA
+Conversa inteligente com modelo local via Ollama.
 
-Exemplo:
+###  Memória permanente
+A IA pode lembrar informações do usuário:
 
-```text
-Meu nome é Bruno
-```
-
-A informação será armazenada automaticamente e poderá ser utilizada posteriormente.
+meu nome é Bruno
 
 ---
 
-##  Histórico de Conversas
-
-Todas as conversas podem ser armazenadas localmente através do sistema de histórico.
-
-Os dados são salvos automaticamente em:
-
-```text
-data/historico.json
-```
+###  Histórico
+Todas as conversas são salvas automaticamente.
 
 ---
 
-##  Objetivos do Projeto
-
-* Aprender Inteligência Artificial Local
-* Praticar Programação em Python
-* Desenvolver Interfaces Gráficas
-* Trabalhar com Persistência de Dados
-* Criar um Assistente Virtual Personalizado
+###  Exportar conversa
+Permite salvar o chat em .txt.
 
 ---
 
-##  Futuras Atualizações
+###  Interface moderna
+Interface gráfica estilo aplicativo usando CustomTkinter.
 
-*  Reconhecimento de voz
-*  Respostas por voz
-*  Banco de dados SQLite
-*  Leitura de PDFs
-*  Pesquisa na internet
-*  Sistema de plugins
-*  Múltiplas conversas
-*  Memória avançada
+---
+
+###  (Opcional) Voz
+A IA pode falar respostas usando sistema de TTS.
+
+---
+
+##  Estrutura do projeto
+
+RobotIA/
+│
+├── main.py
+├── interface.py
+├── chatbot.py
+├── historico.py
+├── memoria.py
+│
+├── data/
+├── logs/
+├── memory/
+└── assets/
+
+---
+
+##  Requisitos
+
+- Python 3.10 ou superior
+- Ollama rodando localmente
+- Conexão local ativa (localhost:11434)
+
+---
+
+##  Exemplo de uso
+
+Você: meu nome é Bruno  
+RobotIA: Vou lembrar disso!
+
+Você: quem sou eu?  
+RobotIA: Seu nome é Bruno.
+
+---
+
+##  Próximas melhorias
+
+-  Reconhecimento de voz (fala → texto)
+-  Memória inteligente avançada
+-  Múltiplas conversas
+-  Versão online
+-  App mobile
 
 ---
 
 ##  Autor
 
-Bruno Miguel
-
-GitHub:
-https://github.com/Brunopro3845
-
----
-
-## ⭐ Contribuição
-
-Sugestões, melhorias e contribuições são sempre bem-vindas.
-
-Se gostou do projeto, considere deixar uma estrela no repositório.
+Projeto desenvolvido por Bruno Miguel
