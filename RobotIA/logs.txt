@@ -1,0 +1,34 @@
+[2026-06-15 00:05:52.913069] Sistema iniciado
+[2026-06-15 00:06:00.440448] Modo GUI escolhido
+[2026-06-15 00:06:00.987753] Sistema OK
+[2026-06-15 00:06:01.266081] Traceback (most recent call last):
+  File "C:\Users\user\Documents\RobotIA\main.py", line 134, in inicializar_interface
+    from interface import iniciar_interface
+  File "C:\Users\user\Documents\RobotIA\interface.py", line 29, in <module>
+    Usuário: {mensagem}
+              ^^^^^^^^
+NameError: name 'mensagem' is not defined
+
+[2026-06-15 00:06:17.410066] Modo GUI escolhido
+[2026-06-15 00:06:17.412346] Sistema OK
+[2026-06-15 00:06:17.418277] Traceback (most recent call last):
+  File "C:\Users\user\Documents\RobotIA\main.py", line 134, in inicializar_interface
+    from interface import iniciar_interface
+  File "C:\Users\user\Documents\RobotIA\interface.py", line 29, in <module>
+    Usuário: {mensagem}
+              ^^^^^^^^
+NameError: name 'mensagem' is not defined
+
+[2026-06-15 00:06:20.918319] Modo GUI escolhido
+[2026-06-15 00:06:20.920747] Sistema OK
+[2026-06-15 00:06:20.925904] Traceback (most recent call last):
+  File "C:\Users\user\Documents\RobotIA\main.py", line 134, in inicializar_interface
+    from interface import iniciar_interface
+  File "C:\Users\user\Documents\RobotIA\interface.py", line 29, in <module>
+    Usuário: {mensagem}
+              ^^^^^^^^
+NameError: name 'mensagem' is not defined
+
+[2026-06-15 00:13:51.987883] Sistema iniciado
+[2026-06-15 00:13:55.100554] Modo GUI escolhido
+[2026-06-15 00:13:55.658232] Sistema OK
