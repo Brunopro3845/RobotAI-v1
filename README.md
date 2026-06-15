@@ -1,72 +1,116 @@
-Assistente de IA Local em Python
+# Assistente de IA Local em Python
 
-
-
-
-
-
-Visão geral
+## Visão geral
 
 Este projeto é um assistente de inteligência artificial local desenvolvido em Python, com interface gráfica e integração com modelos de linguagem (LLMs), como Ollama.
 
-O objetivo é criar um chatbot funcional, leve e extensível, capaz de rodar localmente, armazenar histórico e manter memória básica de conversação.
+O sistema foi projetado para funcionar como um chatbot extensível, capaz de manter histórico de conversas, memória básica e interação em tempo real por meio de interface gráfica.
 
-Funcionalidades
-Chat inteligente com IA local
-Integração com modelos LLM (Ollama ou similares)
-Interface gráfica com CustomTkinter
-Histórico de conversas persistente
-Sistema de memória local simples
-Execução em tempo real com threads
-Arquitetura do projeto
+O foco do projeto é aprendizado prático de inteligência artificial aplicada, arquitetura de software e desenvolvimento de aplicações desktop.
 
-O projeto foi organizado de forma modular para facilitar manutenção e escalabilidade.
+---
+
+## Funcionalidades
+
+- Chat com inteligência artificial local ou via API  
+- Interface gráfica desenvolvida com CustomTkinter  
+- Sistema de histórico de conversas persistente  
+- Memória básica para contexto de interação  
+- Processamento assíncrono para evitar travamentos na interface  
+- Arquitetura modular para fácil manutenção e expansão  
+
+---
+
+## Arquitetura
 
 .
-├── main.py              # Interface principal
-├── chatbot.py          # Comunicação com IA
-├── memoria.py          # Sistema de memória local
-├── historico.py        # Controle de histórico
-├── assets/             # Recursos visuais
-└── README.md
-Interface
+main.py       -       # Ponto de entrada e interface principal
+chatbot.py    -      # Comunicação com modelo de IA
+memoria.py     -     # Gerenciamento de memória contextual
+historico.py   -     # Persistência de conversas
+assets/        -     # Recursos da interface
+README.md
 
+A separação em módulos permite evolução independente de cada componente, como substituição do modelo de IA ou melhoria da interface sem impacto no restante do sistema.
 
-Tecnologias utilizadas
-Python 3.x
-CustomTkinter
-Requests
-Threading
-Ollama API ou outro LLM local
-Tkinter
-Como executar
-Clonar o repositório
-git clone https://github.com/SEU_USUARIO/SEU_REPO.git
-cd SEU_REPO
-Instalar dependências
+---
+
+## Tecnologias utilizadas
+
+- Python 3.x  
+- CustomTkinter  
+- Requests  
+- Threading  
+- Ollama API (ou outro modelo LLM local)  
+- Tkinter  
+
+---
+
+## Como executar o projeto
+
+1. Clonar o repositório:
+
+git clone https://github.com/Brunopro3845/RobotAI.git
+cd RobotAI
+
+2. Instalar dependências:
+
 pip install -r requirements.txt
-Executar o projeto
+
+3. Executar aplicação:
+
 python main.py
-Objetivo do projeto
+
+---
+
+## Requisitos
+
+- Python 3.10 ou superior  
+- Sistema operacional com suporte a interface gráfica  
+- (Opcional) Ollama instalado para execução local de modelos  
+
+---
+
+## Objetivo do projeto
 
 Este projeto foi desenvolvido com foco em:
 
--Aprendizado de inteligência artificial aplicada
--Desenvolvimento de interfaces gráficas em Python
--Integração com modelos de linguagem (LLMs)
--Estruturação de projetos reais para portfólio
--Melhorias futuras
--Adição de sistema de voz (TTS e STT)
--Integração com APIs externas (OpenAI, HuggingFace)
--Memória avançada com banco de dados SQLite
--Interface mais moderna e responsiva
--Empacotamento como executável (.exe)
+- Aplicação prática de inteligência artificial em Python  
+- Desenvolvimento de interfaces gráficas desktop  
+- Integração com modelos de linguagem locais (LLMs)  
+- Organização de código em arquitetura modular  
+- Construção de portfólio técnico para demonstração profissional  
 
-Autor:
+---
 
-Bruno Miguel
-Desenvolvedor Python focado em inteligência artificial, automação e sistemas inteligentes.
+## Possíveis melhorias
 
-Observação:
+- Implementação de memória avançada com banco de dados (SQLite ou similar)  
+- Sistema de contexto mais robusto para conversas longas  
+- Suporte a múltiplos modelos de IA  
+- Adição de entrada e saída por voz (Speech-to-Text e Text-to-Speech)  
+- Empacotamento como executável para distribuição  
+- Interface gráfica mais avançada e responsiva  
 
-Este projeto tem finalidade educacional e pode ser expandido para aplicações mais avançadas de IA local e assistentes inteligentes.
+---
+
+## Estrutura de evolução do projeto
+
+Este projeto foi pensado para evolução contínua em três níveis:
+
+1. Base funcional: chatbot local com interface  
+2. Expansão de inteligência: memória, contexto e múltiplos modelos  
+3. Produto final: assistente completo com voz, persistência e interface refinada  
+
+---
+
+## Autor
+
+Bruno Miguel  
+Desenvolvedor Python com foco em inteligência artificial, automação e sistemas interativos.
+
+---
+
+## Observação
+
+Este projeto tem finalidade educacional e serve como base para evolução em aplicações mais complexas de inteligência artificial local.
