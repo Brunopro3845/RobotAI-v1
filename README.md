@@ -1,143 +1,72 @@
-#  RobotIA
+Assistente de IA Local em Python
 
-Uma assistente virtual em Python com interface gráfica, memória permanente e integração com IA local via Ollama.
 
----
 
-##  Sobre o projeto
 
-O **RobotIA** é uma IA pessoal desenvolvida em Python que combina:
 
--  Chat inteligente com IA local (Ollama)
--  Interface gráfica moderna (CustomTkinter)
--  Memória permanente do usuário
--  Histórico de conversas
--  Sistema de voz (opcional)
--  Exportação de conversas
--  Tema escuro/claro
 
----
+Visão geral
 
-##  Tecnologias utilizadas
+Este projeto é um assistente de inteligência artificial local desenvolvido em Python, com interface gráfica e integração com modelos de linguagem (LLMs), como Ollama.
 
-- Python 3.10+
-- CustomTkinter
-- Requests
-- JSON (memória e histórico)
-- Threading
-- Ollama (modelo local de IA)
+O objetivo é criar um chatbot funcional, leve e extensível, capaz de rodar localmente, armazenar histórico e manter memória básica de conversação.
 
----
+Funcionalidades
+Chat inteligente com IA local
+Integração com modelos LLM (Ollama ou similares)
+Interface gráfica com CustomTkinter
+Histórico de conversas persistente
+Sistema de memória local simples
+Execução em tempo real com threads
+Arquitetura do projeto
 
-##  Instalação
+O projeto foi organizado de forma modular para facilitar manutenção e escalabilidade.
 
-### 1. Clone o repositório
+.
+├── main.py              # Interface principal
+├── chatbot.py          # Comunicação com IA
+├── memoria.py          # Sistema de memória local
+├── historico.py        # Controle de histórico
+├── assets/             # Recursos visuais
+└── README.md
+Interface
 
-git clone https://github.com/seu-usuario/RobotIA.git
-cd RobotIA
 
----
-
-### 2. Instale as dependências
-
-pip install customtkinter requests
-
----
-
-### 3. Instale e rode o Ollama
-
-Baixe em:
-https://ollama.com
-
-Depois rode:
-
-ollama run qwen2.5:0.5b
-
----
-
-##  Como executar
-
+Tecnologias utilizadas
+Python 3.x
+CustomTkinter
+Requests
+Threading
+Ollama API ou outro LLM local
+Tkinter
+Como executar
+Clonar o repositório
+git clone https://github.com/SEU_USUARIO/SEU_REPO.git
+cd SEU_REPO
+Instalar dependências
+pip install -r requirements.txt
+Executar o projeto
 python main.py
+Objetivo do projeto
 
----
+Este projeto foi desenvolvido com foco em:
 
-##  Funcionalidades
+-Aprendizado de inteligência artificial aplicada
+-Desenvolvimento de interfaces gráficas em Python
+-Integração com modelos de linguagem (LLMs)
+-Estruturação de projetos reais para portfólio
+-Melhorias futuras
+-Adição de sistema de voz (TTS e STT)
+-Integração com APIs externas (OpenAI, HuggingFace)
+-Memória avançada com banco de dados SQLite
+-Interface mais moderna e responsiva
+-Empacotamento como executável (.exe)
 
-###  Chat com IA
-Conversa inteligente com modelo local via Ollama.
+Autor:
 
-###  Memória permanente
-A IA pode lembrar informações do usuário:
+Bruno Miguel
+Desenvolvedor Python focado em inteligência artificial, automação e sistemas inteligentes.
 
-meu nome é Bruno
+Observação:
 
----
-
-###  Histórico
-Todas as conversas são salvas automaticamente.
-
----
-
-###  Exportar conversa
-Permite salvar o chat em .txt.
-
----
-
-###  Interface moderna
-Interface gráfica estilo aplicativo usando CustomTkinter.
-
----
-
-###  (Opcional) Voz
-A IA pode falar respostas usando sistema de TTS.
-
----
-
-##  Estrutura do projeto
-
-RobotIA/
-│
-├── main.py
-├── interface.py
-├── chatbot.py
-├── historico.py
-├── memoria.py
-│
-├── data/
-├── logs/
-├── memory/
-└── assets/
-
----
-
-##  Requisitos
-
-- Python 3.10 ou superior
-- Ollama rodando localmente
-- Conexão local ativa (localhost:11434)
-
----
-
-##  Exemplo de uso
-
-Você: meu nome é Bruno  
-RobotIA: Vou lembrar disso!
-
-Você: quem sou eu?  
-RobotIA: Seu nome é Bruno.
-
----
-
-##  Próximas melhorias
-
--  Reconhecimento de voz (fala → texto)
--  Memória inteligente avançada
--  Múltiplas conversas
--  Versão online
--  App mobile
-
----
-
-##  Autor
-
-Projeto desenvolvido por Bruno Miguel
+Este projeto tem finalidade educacional e pode ser expandido para aplicações mais avançadas de IA local e assistentes inteligentes.
