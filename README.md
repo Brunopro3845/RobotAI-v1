@@ -25,10 +25,15 @@ O foco do projeto é aprendizado prático de inteligência artificial aplicada, 
 
 .
 main.py       -       # Ponto de entrada e interface principal
+
 chatbot.py    -      # Comunicação com modelo de IA
+
 memoria.py     -     # Gerenciamento de memória contextual
+
 historico.py   -     # Persistência de conversas
+
 assets/        -     # Recursos da interface
+
 README.md
 
 A separação em módulos permite evolução independente de cada componente, como substituição do modelo de IA ou melhoria da interface sem impacto no restante do sistema.
