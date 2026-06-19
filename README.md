@@ -24,15 +24,15 @@ O foco do projeto é aprendizado prático de inteligência artificial aplicada, 
 ## Arquitetura
 
 .
-main.py       -       # Ponto de entrada e interface principal
+main.py             # Ponto de entrada e interface principal
 
-chatbot.py    -      # Comunicação com modelo de IA
+chatbot.py         # Comunicação com modelo de IA
 
-memoria.py     -     # Gerenciamento de memória contextual
+memoria.py         # Gerenciamento de memória contextual
 
-historico.py   -     # Persistência de conversas
+historico.py       # Persistência de conversas
 
-assets/        -     # Recursos da interface
+assets            # Recursos da interface
 
 README.md
 
